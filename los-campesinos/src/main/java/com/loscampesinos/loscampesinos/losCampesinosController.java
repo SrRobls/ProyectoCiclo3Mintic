@@ -11,4 +11,15 @@ public class losCampesinosController {
     public String goToInicio(Model model){
         return "inicio";
     }
+
+    @GetMapping("/ayuda")
+    public String goToAyuda(Model model){
+        return "ayuda";
+    }
+
+    @GetMapping("/carrito")
+    public String goToCarrito(Model model){
+        return "carrito";
+    }
+
 }
