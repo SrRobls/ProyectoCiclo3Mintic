@@ -3,3 +3,35 @@
     font-family: 'Times New Roman', Times, serif;
     background:none;
 }
+
+.conedortarjetas ul{
+    max-width: 12%;
+
+}
+.conedortarjetas li{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+.conedortarjetas{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-around;
+    /* align-content: center; */
+}
+
+.tarjetas div{
+    margin: 5px 5px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content:space-around;
+}
+

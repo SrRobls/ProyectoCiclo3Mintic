@@ -25,3 +25,8 @@ body{
     min-height: 3.125rem;
     line-height: initial;
 }
+
+h1{
+    color: white;
+    text-align: center;
+}
