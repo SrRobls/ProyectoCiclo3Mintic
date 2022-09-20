@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,6 @@
     <title>Ayuda</title>
 </head>
 <body>
-    <h1>Estas en la sección De Ayuda.</h1>
+    <h1 th:text="${titulo}"></h1>
 </body>
 </html>
