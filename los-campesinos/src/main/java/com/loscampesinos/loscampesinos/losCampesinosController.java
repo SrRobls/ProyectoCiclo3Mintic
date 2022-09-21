@@ -65,11 +65,13 @@ public class losCampesinosController {
     @GetMapping("/frutas")
     public String goToInicioFrutas(Model model){
         model.addAttribute("titulo", "Frutas");
-        var productosVerduras = productos.stream()
+        var productosVerduras = Arrays.asList();
+        productosVerduras = productos.stream()
             .filter(p -> p.getId_Tipo() == "2")
             .collect(Collectors.toList());
             model.addAttribute("productos", productosVerduras);
             model.addAttribute("activadoFrutas", true);
+            model.addAttribute("mensaje", "No Hay Productos De Este Tipo.");
         return "productos";
     }
 
