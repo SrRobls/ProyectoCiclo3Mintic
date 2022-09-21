@@ -1,0 +1,32 @@
+:root{
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.bd-dark{
+    background-color: var(--dark) !important;
+}
+
+.img-fluid{
+    width: 280px;
+}
+.form-label{
+    color: var(--light) !important;
+}
+.bg-dark-x{
+    background-color: var(--dark-x) !important;
+}
+
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
