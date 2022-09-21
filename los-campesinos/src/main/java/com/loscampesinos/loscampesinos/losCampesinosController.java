@@ -58,6 +58,7 @@ public class losCampesinosController {
             .collect(Collectors.toList());
 
         model.addAttribute("productos", productosVerduras);
+        model.addAttribute("activadoVerduras", true);
         return "productos";
     }
 
@@ -68,6 +69,7 @@ public class losCampesinosController {
             .filter(p -> p.getId_Tipo() == "2")
             .collect(Collectors.toList());
             model.addAttribute("productos", productosVerduras);
+            model.addAttribute("activadoFrutas", true);
         return "productos";
     }
 
@@ -78,6 +80,7 @@ public class losCampesinosController {
             .filter(p -> p.getId_Tipo() == "3")
             .collect(Collectors.toList());
             model.addAttribute("productos", productosVerduras);
+            model.addAttribute("activadoGranos", true);
         return "productos";
     }
 }

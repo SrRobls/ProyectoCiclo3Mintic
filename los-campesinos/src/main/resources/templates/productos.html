@@ -44,17 +44,17 @@
     <h2 th:text = "${titulo}" style="text-align: center;"></h2>
     <div class="conedortarjetas">
       <ul class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item">
+        <li th:class="'nav-item ' +${activadoVerduras == true ? 'active' : ''}">
           <a href="/verduras" class="nav-link " aria-current="page">
             Verduras
           </a>
         </li>
-        <li class="nav-item">
+        <li th:class="'nav-item ' +${activadoFrutas == true ? 'active' : ''}">
           <a href="/frutas" class="nav-link " aria-current="page">
             Frutas
           </a>
         </li>
-        <li class="nav-item">
+        <li th:class="'nav-item ' +${activadoGranos == true ? 'active' : ''}">
           <a href="/granos" class="nav-link " aria-current="page">
             Granos
           </a>
