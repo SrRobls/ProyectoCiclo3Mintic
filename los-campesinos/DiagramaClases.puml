@@ -1,0 +1,60 @@
+@startuml
+
+class Usuario{
+    - String idUsuario
+    - String nombreUsuario
+    - String Contraseña
+    + void VerificarLogin
+}
+
+class Administrador{
+    + void CrearProducto()
+    + void EliminarProducto()
+    + void ActualizarProducto()
+}
+
+class Cliente{
+    - String Correo
+    - String Dirección
+    - String num_telefonico
+    + void IniciarSesión
+    + void Registrarse 
+}
+
+class Carrito{
+    - String id_carrito
+    - ArrayList ListaProductos
+    - Float valor_total_carrito
+    + void QuitarProducto()
+    + void AumentarCantidadproducto()
+    + void DisminuirCantidadproducto()
+    + void vaciarCarrito()
+}
+
+class Producto{
+    - String id_producto
+    - String nombre
+    - Float precio_por_kilo
+    - String descripcion
+    - String linkImagen
+
+}
+
+enum Estado{
+    DISPONIBLE,
+    NO-DISPONIBLE
+}
+
+Class TipoProducto{
+    - String id_tipoProducto
+    - String NombreTipo
+}
+
+Administrador -UP-|> Usuario
+Cliente -UP-|> Usuario
+Cliente -left- Carrito
+Carrito "1" o-Up- "0..*" Producto
+Producto -RIGHT-> Estado
+Producto -Left-> TipoProducto 
+
+@enduml
