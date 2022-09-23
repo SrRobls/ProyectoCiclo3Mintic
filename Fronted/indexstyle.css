@@ -1,5 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*NAVEGACION*/
+.logo-title{
+    text-align: left;
+    font-weight: bold;
+}
 .container-fluid{
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Toggle navigation";
     background:none;
+}
+.navegador{
+    text-align: right;
+}
+.navegador .nav-item a:hover{
+    color: rgb(180, 180, 180);
+}
+
+
+.nav-link-ingreso{
+    text-align: left;
+}
+/*PRODUCTOS*/
+.main{
+    padding: 20px;
+    font-family: "Toggle navigation";
+}
+.container h5{
+    text-align: left;
+    font-family: "Toggle navigation";
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+.container-products{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+.card{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    
+    
+}
+.card .product-price{
+    color: #ff4e00;
+    font-weight: bold;
+}
+.card:hover{
+    border-radius: 20px;
+    box-shadow:7px 13px 37px #000;
 }

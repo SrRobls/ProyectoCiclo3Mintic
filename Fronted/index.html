@@ -7,58 +7,178 @@
     <link rel="stylesheet" href="indexstyle.css">
     <title>Los Campesinos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/e14e5ccc88.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--NAVEGADOR-->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Los Campesinos</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="logo-title">
+          <a class="navbar-brand" href="/Fronted/index.html">Los Campesinos</a>
+          </div>
+          <div class="navegador">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/Fronted/index.html">Inicio</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#">Ayuda</a>
+                <a class="nav-link active" href="#"><i class="fa-solid fa-circle-info"></i> Ayuda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Carrito</a>
+                <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Fronted/inicio.html">Iniciar Sesión/Registrarse</a>
-            </li>
+                <a class="nav-link active" href="/Fronted/inicio.html"><i class="fa-solid fa-circle-user"></i> Ingreso</a>
+              </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+          </div>
           </div>
         </div>
     </nav>
-<!--Cartas Productos-->>
-    <div class="card" style="width: 18rem;;   " >
-        <img src="Img/pexels-magda-ehlers-1300975.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Frutas</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Ver mas frutas</a>
+<!--Cartas Productos-->
+<main class="main">
+  <!--Sección Frutas-->
+  <div class="container">
+    <h5>Frutas</h5>
+      <section class="container-products">
+        <div class="card" style="width: 18rem;">
+            <img src="/Fronted/Img/bananos.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="product-price">$2.000/u</span>
+              <p class="card-description">Banano</p>
+            </div>
+            <i class="fa-solid fa-cart-plus"></i>
         </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="#" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Verduras</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Ver mas verduras</a>
+        <div class="card" style="width: 18rem;">
+            <img src="/Fronted/Img/manzanaverde2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="product-price"> $2.000/u</span>
+              <p class="card-description">Manzana Verde</p>
+            </div>
+            <i class="fa-solid fa-cart-plus"></i>
         </div>
-      </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/Fronted/Img/platano_maduro.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="product-price">$2.071/u</span>
+              <p class="card-description">Platano Maduro</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/limon_tahiti.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$600/u</span>
+            <p class="card-description">Limón Tahiti</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/mango.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$6.400/u</span>
+            <p class="card-description">Mango</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/maracuya.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$1.600/u</span>
+            <p class="card-description">Maracuya</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/lulo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$1.450/u</span>
+            <p class="card-description">Lulo</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/sandia.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$13.500/u</span>
+            <p class="card-description">SandÍa Entera</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+      </section>
+  </div>
+  <!--Sección Verduras-->
+  <div class="container">
+    <h5>Verduras</h5>
+      <section class="container-products">
+        <div class="card" style="width: 18rem;">
+            <img src="/Fronted/Img/cebolla_cabezona.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="product-price">$1.600/u</span>
+              <p class="card-description">Ceboola Cabezona</p>
+            </div>
+            <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/Fronted/Img/pimenton.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="product-price"> $1.600/u</span>
+              <p class="card-description">Pimenton</p>
+            </div>
+            <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="/Fronted/Img/zanahoria.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <span class="product-price">$680/u</span>
+              <p class="card-description">Zanahoria</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/coliflor.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$5.400/u</span>
+            <p class="card-description">Coliflor</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/platano_verde.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$7.200/u</span>
+            <p class="card-description">Platano Verde</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/berenjena.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$1.900/u</span>
+            <p class="card-description">Berenjena</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/cebolla_larga.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$4.200/u</span>
+            <p class="card-description">Cebolla Larga</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/Fronted/Img/habichuela.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="product-price">$8.900/kg</span>
+            <p class="card-description">Habichuela</p>
+          </div>
+          <i class="fa-solid fa-cart-plus"></i>
+        </div>
+      
+        
 
-
+      </section>
+  </div>
+</main>
 
 
 <!-- JavaScript Bundle with Popper -->
