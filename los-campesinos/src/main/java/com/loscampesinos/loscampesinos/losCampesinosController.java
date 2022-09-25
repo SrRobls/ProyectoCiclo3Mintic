@@ -1,5 +1,7 @@
 package com.loscampesinos.loscampesinos;
 
+import java.lang.annotation.Inherited;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -74,5 +76,10 @@ public class losCampesinosController {
             model.addAttribute("activadoGranos", true);
             model.addAttribute("mensaje", "No Hay Productos De Este Tipo.");
         return "productos";
+    }
+    
+    @GetMapping("/registro")
+    public String goToRegistro(Model model){
+        return "registro";
     }
 }
