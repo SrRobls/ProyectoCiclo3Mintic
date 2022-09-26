@@ -11,7 +11,6 @@ public class ProductoDto {
     private String id_producto;
     private String nombre;
     private Double precioKilo;
-    private String Descripcion;
     private String linkImagen;
     private String id_Tipo;
 }
