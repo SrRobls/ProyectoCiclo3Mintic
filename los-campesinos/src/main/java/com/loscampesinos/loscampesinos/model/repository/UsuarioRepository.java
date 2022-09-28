@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.loscampesinos.loscampesinos.model.entity.usuario;
 
-public interface UsuarioRepository extends JpaRepository<usuario, Integer>{
+public interface UsuarioRepository extends JpaRepository<usuario, String>{
     
 }
