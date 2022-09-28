@@ -2,24 +2,13 @@
 
 class Usuario{
     - String idUsuario
+    - String Nombre
     - String nombreUsuario
+    - String correo
     - String Contraseña
     + void VerificarLogin
 }
 
-class Administrador{
-    + void CrearProducto()
-    + void EliminarProducto()
-    + void ActualizarProducto()
-}
-
-class Cliente{
-    - String Correo
-    - String Dirección
-    - String num_telefonico
-    + void IniciarSesión
-    + void Registrarse 
-}
 
 class Carrito{
     - String id_carrito
@@ -50,9 +39,8 @@ Class TipoProducto{
     - String NombreTipo
 }
 
-Administrador -UP-|> Usuario
-Cliente -UP-|> Usuario
-Cliente -left- Carrito
+
+Usuario -left- Carrito
 Carrito "1" o-Up- "0..*" Producto
 Producto -RIGHT-> Estado
 Producto -Left-> TipoProducto 
