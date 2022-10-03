@@ -14,7 +14,7 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("api/login")
+@RequestMapping("/api/index")
 public class LoginRestController {
     
 
