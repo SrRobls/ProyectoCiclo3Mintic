@@ -50,15 +50,17 @@
                     <h1 class="text-light font-weight-bold nb-4" >Bienvenido</h1>
                     <form method="GET" action="/productos">
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
-                          <input type="email" class="form-control bg-dark-x border-0" placeholder="Ingresa tu email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="exampleInputEmail1" class="form-label font-weight-bold">Usuario</label>
+                          <input type="text" class="form-control border-0" placeholder="Ingresa tu usario" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         </div>
                         <div class="mb-3">
                           <label for="exampleInputPassword1" class="form-label font-weight-bold">Contraseña</label>
-                          <input type="password" class="form-control bg-dark-x border-0" placeholder="Ingresa tu contraseña" id="exampleInputPassword1">
+                          <input type="password" class="form-control border-0" placeholder="Ingresa tu contraseña" id="exampleInputPassword1" required>
+                        </div>
+                        <div id="errorBox">
                         </div>
                         <a class="w-100 text-decoration-none" href="/registro">¿Eres Nuevo? Registrate aquí</a>
-                        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                        <button type="button" onclick="login()" class="btn btn-primary w-100">Iniciar Sesión</button>
                       </form>
                 </div>
             </div>
@@ -74,6 +76,7 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <!-- <script src="js/booststrap.min.js"></script> -->
+    <script src="js/login.js"></script>
     
 </body>
 </html>
