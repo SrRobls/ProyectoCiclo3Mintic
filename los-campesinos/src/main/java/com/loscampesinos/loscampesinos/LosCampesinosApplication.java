@@ -8,7 +8,5 @@ public class LosCampesinosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(LosCampesinosApplication.class, args);
-	}
-
-	
+	}	
 }
