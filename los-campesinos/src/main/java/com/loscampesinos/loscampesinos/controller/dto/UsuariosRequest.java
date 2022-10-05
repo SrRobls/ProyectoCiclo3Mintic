@@ -10,5 +10,5 @@ public class UsuariosRequest {
     private String username;
     private String password;
     private String correo;
-    private Boolean admin;
+    // private Boolean admin;
 }
