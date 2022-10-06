@@ -138,3 +138,16 @@ const removeItem = (key) => {
     movieElm.remove();
 
 }
+// const espera = async () =>{
+//     await new Promise(r => setTimeout(r, 6000));
+// }
+
+const vaciar = () =>{
+    let items = localStorage.getItem("cart");
+    if (items == undefined) {
+        return;
+    }
+    localStorage.clear(items)
+    // espera()
+    // location.reload()
+};
