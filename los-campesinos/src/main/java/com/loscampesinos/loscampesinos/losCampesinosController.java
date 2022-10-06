@@ -30,11 +30,11 @@ public class losCampesinosController {
         return "productos";
     }
 
-    @GetMapping("/ayuda")
-    public String goToAyuda(Model model){
-        model.addAttribute("titulo", "Estas En La Sección De Ayuda");
-        return "ayuda";
-    }
+    // @GetMapping("/ayuda")
+    // public String goToAyuda(Model model){
+    //     model.addAttribute("titulo", "Estas En La Sección De Ayuda");
+    //     return "ayuda";
+    // }
 
     @GetMapping("/carrito")
     public String goToCarrito(Model model){

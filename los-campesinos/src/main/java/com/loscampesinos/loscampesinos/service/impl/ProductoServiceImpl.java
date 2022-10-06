@@ -40,5 +40,19 @@ public class ProductoServiceImpl implements ProductoServie{
             .collect(Collectors.toList());
         return productosTipo;
     }
+
+    @Override
+    public ProductoDto getProductosById(Integer idProducto) {
+        var produtOBj = productoRepository.findById(idProducto);
+
+        var producto = produtOBj.get();
+        return ProductoDto.builder()
+                .idProducto(producto.getId_producto())
+                .nombre(producto.getNombre())
+                .precioKilo(producto.getPrecioKilo())
+                .linkImagen(producto.getLinkImagen())
+                .id_Tipo(producto.getTipo())
+            .build();
+    }
     
 }
