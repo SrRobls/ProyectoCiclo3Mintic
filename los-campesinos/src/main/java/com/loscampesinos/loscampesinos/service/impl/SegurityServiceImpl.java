@@ -47,11 +47,11 @@ public class SegurityServiceImpl implements SegurityService{
     }
 
     @Override
-    public void crearUsuario(UsuariosRequest usuario) {
+    public usuario crearUsuario(UsuariosRequest usuario) {
         var userOp = usuarioRepository.findById(usuario.getUsername());
 
         if(userOp.isPresent()){
-            throw new RuntimeException("El Usuario Ya Existe");
+            throw new RuntimeException("El nombre de usuario ya existe, por favor vuelve a intentar con otro nombre de usuario.");
         }
 
         var userDb = new usuario();
@@ -60,8 +60,9 @@ public class SegurityServiceImpl implements SegurityService{
         userDb.setNombre(usuario.getNombre());
         userDb.setCorreo(usuario.getCorreo());
         userDb.setActive(true);
-        userDb.setAdmin(usuario.getAdmin());
+        userDb.setAdmin(false);
         userDb = usuarioRepository.save(userDb);
+        return userDb;
         
     }
 

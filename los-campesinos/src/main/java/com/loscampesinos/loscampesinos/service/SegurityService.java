@@ -5,13 +5,14 @@ import java.util.List;
 
 import com.loscampesinos.loscampesinos.controller.dto.UsuariosRequest;
 import com.loscampesinos.loscampesinos.controller.dto.UsuariosResponse;
+import com.loscampesinos.loscampesinos.model.entity.usuario;
 
 
 public interface SegurityService {
 
     public UsuariosResponse validarUser(String username, String password);
 
-    void crearUsuario(UsuariosRequest usuario);
+    usuario crearUsuario(UsuariosRequest usuario);
 
     void updateUsuario(UsuariosRequest usuario);
 

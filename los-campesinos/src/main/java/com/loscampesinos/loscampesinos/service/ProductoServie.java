@@ -9,6 +9,8 @@ public interface ProductoServie {
 
     List<ProductoDto> getProductos();
 
+    ProductoDto getProductosById(Integer idProducto);
+
     List<ProductoDto> getProductosPorTipo(String idTipo);
 
     

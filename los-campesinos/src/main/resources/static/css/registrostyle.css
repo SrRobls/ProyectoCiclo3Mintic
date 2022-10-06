@@ -51,3 +51,7 @@ body{
 .form-register .botons:hover{
     background: #676e7b;
 }
+
+#errorBox{
+    color: black !important; 
+}
